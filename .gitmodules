@@ -1,0 +1,3 @@
+[submodule "spotify-song-range"]
+	path = spotify-song-range
+	url = https://github.com/danielisgr8/spotify-song-range.git

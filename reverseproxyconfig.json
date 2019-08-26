@@ -1,0 +1,8 @@
+{
+    "routes": [
+        {
+            "route": "/spotify-song-range",
+            "address": "http://localhost:1001"
+        }
+    ]
+}
