@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Daniel Schubert e-portfolio",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.19.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielisgr8/portfolio.git"
+  },
+  "author": "Daniel Schubert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielisgr8/portfolio/issues"
+  },
+  "homepage": "https://github.com/danielisgr8/portfolio#readme"
+}
