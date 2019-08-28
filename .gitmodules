@@ -1,3 +1,9 @@
 [submodule "spotify-song-range"]
 	path = spotify-song-range
 	url = https://github.com/danielisgr8/spotify-song-range.git
+[submodule "Spotify-Tracker"]
+	path = Spotify-Tracker
+	url = https://github.com/danielisgr8/Spotify-Tracker.git
+[submodule "Playlist-Art"]
+	path = Playlist-Art
+	url = https://github.com/danielisgr8/Playlist-Art.git

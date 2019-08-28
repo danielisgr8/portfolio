@@ -3,6 +3,14 @@
         {
             "route": "/spotify-song-range",
             "address": "http://localhost:1001"
-        }
+        },
+	{
+            "route": "/spotify-tracker",
+	    "address": "http://localhost:1002"
+	},
+	{
+	    "route": "/playlist-art",
+	    "address": "http://localhost:1003"
+	}
     ]
 }
