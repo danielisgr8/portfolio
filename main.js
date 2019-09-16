@@ -12,10 +12,7 @@ const privateKey  = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/pr
 const certificate = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/fullchain.pem', 'utf8');
 const credentials = { key: privateKey, cert: certificate };
 
-app.get("/", (req, res) => {
-	res.end("Hello world!!!");
-	// TODO: send html file instead
-});
+app.use(express.static("./public"));
 
 for(const route of routes) {
 	app.use(route.route, proxy({

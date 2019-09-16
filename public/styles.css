@@ -1,0 +1,50 @@
+body {
+	font-family: arial;
+	margin: 0;
+}
+
+a {
+	color: #247BA0;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+}
+
+.header {
+	padding: 0.5rem;
+	border-bottom: 1px black solid;
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	margin: 0;
+}
+
+.links {
+	display: flex;
+}
+
+.links p {
+	margin-right: 1.5rem;
+}
+
+.body {
+	display: flex;
+	padding: 0.5rem;
+}
+
+.body h2 {
+	margin: 0.6rem 0;
+}
+
+.body ul {
+	margin: 0;
+}
+
