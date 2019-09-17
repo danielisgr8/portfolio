@@ -1,6 +1,13 @@
+html {
+	height: 100%;
+}
+
 body {
 	font-family: arial;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 a {
@@ -32,12 +39,19 @@ p {
 }
 
 .links p {
-	margin-right: 1.5rem;
+	margin-right: 0.75rem;
+	padding-right: 0.75rem;
+	border-right: 1px black solid;
+}
+
+.links p:last-child {
+	border: none;
 }
 
 .body {
 	display: flex;
 	padding: 0.5rem;
+	height: 100%;
 }
 
 .body h2 {
@@ -46,5 +60,28 @@ p {
 
 .body ul {
 	margin: 0;
+}
+
+.projects {
+	width: 34%;
+	height: 100%;
+	border-right: 1px black solid;
+}
+
+.notes p {
+	text-indent: 1rem;
+}
+
+.descriptions {
+	width: 66%;
+}
+
+.descriptions div {
+	display: none;
+}
+
+.descriptions div img {
+	max-width: 100%;
+	max-height: 100%;
 }
 

@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<title>Daniel Schubert - ePortfolio</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+		<link rel="manifest" href="./site.webmanifest">
+		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
 		<link rel="stylesheet" href="./styles.css">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
@@ -17,18 +17,34 @@
 			<div class="links">
 				<p><a href="mailto:schubertmdaniel@gmail.com">schubertmdaniel@gmail.com</a></p>
 				<p><a href="https://github.com/danielisgr8">GitHub</a></p>
+				<p><a href="https://www.linkedin.com/in/daniel-schubert-7ab18b128/">LinkedIn</a></p>
 			</div>
 		</div>
 		<div class="body">
 			<div class="projects">
 				<h2>Project Demos</h2>
-				<p>Note: Refreshing Spotify authentication is not fully implemented, so if any errors or excessively long requests are encountered, navigating back to the given project's login page should fix the issue.</p>
-				<ul>
+				<div class="notes">
+					<p>Note: If any errors or long requests are encountered, navigating back to the given project's login page should fix the issue.</p>
+					<p>Note: All of the below demos requires a Spotify account (ideally with songs and playlists in their library).</p>
+				</div>
+				<ul class="project-list">
 					<li><a href="./spotify-song-range/">Spotify Song Range</a></li>
 					<li><a href="./spotify-tracker/">Spotify Tracker</a></li>
 					<li><a href="./playlist-art/">Playlist Art</a></li>
 				</ul>
 			</div>
+			<div class="descriptions">
+				<div>
+					<img src="./gifs/spotify-song-range.gif">
+				</div>
+				<div>
+					<img src="./gifs/spotify-tracker.gif">
+				</div>
+				<div>
+					<img src="./gifs/playlist-art.gif">
+				</div>
+			</div>
 		</div>
+		<script src="./main.js"></script>
 	</body>
 </html>
