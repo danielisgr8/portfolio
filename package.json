@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Daniel Schubert e-portfolio",
   "main": "main.js",
   "dependencies": {
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "node main.js",
-    "build": "babel client-src/main.js --out-file public/main.js",
+    "build": "babel client-src/main.js -o public/main.js -s --extensions '.js,.jsx'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

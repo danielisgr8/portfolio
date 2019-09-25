@@ -62,3 +62,4 @@ typings/
 
 *.swp
 public/main.js
+public/main.js.map
