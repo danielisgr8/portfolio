@@ -157,7 +157,7 @@ const App = () => {
 				<Section key={section.title} {...section} setProject={(clicked) => { if(!project || clicked.title !== project.title) setProject(clicked); else setProject(null); }} />
 			))}
 		</div>
-		{project ? <Description {...project} /> : null}
+		{project ? <Description {...project} /> : <div className="empty-description"><p>Click on a project to learn more</p></div>}
 		</>
 	);
 };
