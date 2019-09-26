@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] - 2019-09-25
+### Added
+- New project: [Portfolio](https://github.com/danielisgr8/portfolio)
+- New project: Adventurous Art
+
+### Changed
+- All h2 elements under other h2 elements have been switched to h3 for consistency
+- Project title font size in sections have also been lowered for the same reason
+
+### Removed
+- WIP section has been removed since almost all projects have now been added
+
 ## [1.2.1] - 2019-09-25
 ### Added
 - A new section, "Other Projects", that currently contains [Spotify Console](https://github.com/danielisgr8/Spotify-Console).

@@ -67,12 +67,33 @@ const sections = [
 					"Separated source files to optimize use of make",
 					"Wrote all logic for making the border wrap the terminal, calculating and displaying progress, centering the title and artist, and updating the state of paused/playing"
 				]
+			},
+			{
+				"title": "Portfolio",
+				"gifLink": "./gifs/reverse-proxy.png",
+				"githubLink": "https://github.com/danielisgr8/portfolio",
+				"points": [
+					"What you're looking at right now!",
+					"Implemented a reverse proxy system for running demos (each demo is locally running on a separate port)",
+					"Emphasized semantic versioning and detailed changelogs (refer to GitHub repo)"
+				]
+			},
+			{
+				"title": "Adventurous Art",
+				"gifLink": "./gifs/adventurous-art.png",
+				"points": [
+					"A drawing social media app",
+					"Done as in a group project class with 3 other students",
+					"Placed in top 3 best projects out of 52",
+					"Personally voted 1 of 13 best coders out of 199 students",
+					"Implemented real-time collaborative drawing using WebSockets",
+					"Incorporated the Met API to allow users to trace over artwork (picture 4)",
+					"Designed a large portion of general UI look and logic",
+					"Worked in an Agile environment"
+				]
 			}
 		]
 	},
-	{
-		"title": "Descriptions of other projects WIP. Please check my GitHub for the time being." 
-	}
 ];
 
 const ProjectLink = ({title, onClick}) => (
@@ -83,8 +104,8 @@ const Description = ({title, gifLink, demoLink, githubLink, points}) => {
 	const links = demoLink || githubLink
 		? (
 			<div className="links">
-				{demoLink ? <h2><a href={demoLink}>Demo</a></h2> : null}
-				{githubLink ? <h2><a href={githubLink}>GitHub</a></h2> : null}
+				{demoLink ? <h3><a href={demoLink}>Demo</a></h3> : null}
+				{githubLink ? <h3><a href={githubLink}>GitHub</a></h3> : null}
 			</div>)
 		: null;
 
