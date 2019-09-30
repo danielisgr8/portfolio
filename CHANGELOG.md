@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2019-09-29
+### Added
+- JSDoc type definitions for a `Project` and `Section`
+
+### Changed
+- `App` now takes in a `sections` prop instead of using a hard-coded variable
+- Directory rename for clarity: `public/gifs/` -> `public/imgs/`
+- All section/project JSON is now in a separate file, `public/sections.js` to reduce rebuilding code
+- `Project` property name change: `gifLink` -> `imgSrc` for clarity
+- `Project` property name change: `githubLink` -> `repoLink` for versatility
+
 ## [1.2.4] - 2019-09-29
 ### Added
 - "Professional Experience" section
