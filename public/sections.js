@@ -43,7 +43,8 @@ const sections = [
 					"Designed a REST API for authenticating, getting liked songs, and setting and clearing song ranges",
 					"Emphasized architecture in the back-end by separating the REST API, HTTP requests to Spotify, utility functions, and commind-line argument parsing into separate modules.",
 					"Utilized toasts (Toastify) to notify the user of successful changes",
-					"Supported local development through command-line arguments"
+					"Supported local development through command-line arguments",
+					"Re-designed back-end architecture to apply separation of concerns between users, endpoints, and Spotify requests"
 				]
 			},
 			{
