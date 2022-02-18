@@ -8,14 +8,17 @@
     "http-proxy-middleware": "^0.19.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.2",
-    "@babel/core": "^7.6.2",
-    "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "@babel/preset-env": "^7.6.2"
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "start": "node main.js",
-    "build": "babel client-src/main.js -o public/main.js -s --extensions '.js,.jsx'",
+    "start": "npm run build && node main.js",
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
