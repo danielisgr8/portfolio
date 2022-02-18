@@ -8,9 +8,14 @@ const { routes } = require("./reverseproxyconfig.json");
 
 const app = express();
 
-const privateKey  = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/fullchain.pem', 'utf8');
-const credentials = { key: privateKey, cert: certificate };
+let credentials;
+try {
+	const privateKey  = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/privkey.pem', 'utf8');
+	const certificate = fs.readFileSync('/etc/letsencrypt/live/danielschubert.dev/fullchain.pem', 'utf8');
+	credentials = { key: privateKey, cert: certificate };
+} catch (error) {
+	console.log('Cannot find TLS private key and certificate, defaulting to using an unsecure HTTP server.');
+}
 
 app.use(express.static("./public"));
 
@@ -40,14 +45,15 @@ for(const wsConfig of wsProxyConfig) {
 	wsProxies[wsConfig.route] = wsProxy;
 }
 
-const httpsServer = https.createServer(credentials, app);
+const server = credentials ? https.createServer(credentials, app) : http.createServer(app);
+const port = process.env.PORT || (credentials ? 443 : 80);
 
-httpsServer.listen(443, (err) => {
+server.listen(port, (err) => {
 	if(err) { return console.log(err); }
-	console.log("Listening at port 443");
+	console.log(`Listening at port ${port}`);
 });
 
-httpsServer.on("upgrade", (req, socket, head) => {
+server.on("upgrade", (req, socket, head) => {
 	wsProxies[req.url].upgrade(req, socket, head);
 });
 
