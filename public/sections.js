@@ -33,7 +33,7 @@ const sections = [
 		"projects": [
 			{
 				"title": "Spotify Song Range",
-				"imgSrc": "https://danielschubert.dev/imgs/spotify-song-range.gif",
+				"imgSrc": "./imgs/spotify-song-range.gif",
 				"demoLink": "./spotify-song-range/",
 				"repoLink": "https://github.com/danielisgr8/spotify-song-range",
 				"points": [
@@ -49,7 +49,7 @@ const sections = [
 			},
 			{
 				"title": "Playlist Art",
-				"imgSrc": "https://danielschubert.dev/imgs/playlist-art.gif",
+				"imgSrc": "./imgs/playlist-art.gif",
 				"demoLink": "./playlist-art/",
 				"repoLink": "https://github.com/danielisgr8/Playlist-Art",
 				"points": [
